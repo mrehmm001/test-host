@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+    <form action="/colourise" method="post" enctype="multipart/form-data"> 
+        <p>Test:</p>
+        <input type="text" name="test" id="test" value="test">
+        <input type="file" name="image" id="image" accept="image/png, image/jpeg">
+        <input type="submit" value="submit">
+    </form>
+{% endblock %}

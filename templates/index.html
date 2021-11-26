@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+    <h1>Template</h1>
+    {% if before %}
+        <img src="data:image/jpeg;base64,{{ before }}" alt="before"  id="before"/>
+        <img src="data:image/jpeg;base64,{{ result }}" alt="result"  id="result"/>
+    {% endif %}
+{% endblock %}
